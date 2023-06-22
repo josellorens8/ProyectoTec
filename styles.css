@@ -9,13 +9,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 @font-face {
-    font-family: 'Cudabak';
-    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-family: 'Cubadak';
+    src: url('Cubadak.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
   }
+
+body {
+    font-family: 'Cubadak';
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-1);
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#inicio {
+    width: 100%;
+    height: auto;
+}
+
+#inicio img {
+    width: 100%;
+    height: auto;
+}
 
 nav {
     background-color: #1A4295;
@@ -54,6 +79,7 @@ nav img{
     width: 60%;
 }
 .texto1, .texto2 {
+    text-transform: uppercase;
     width: 40%;
     font-size: 20px;
     color: var(--color-1);
