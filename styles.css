@@ -1,12 +1,60 @@
 :root {
-    --color-1: #;
-    --color-2: #;
-    --color-3: #;
-    --color-4: #;
+    --color-1: #1A4295;
+    --color-2: #e3e0e0;
+
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Cudabak';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+nav {
+    background-color: #1A4295;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.nav-items a {
+    font-size: 20px;
+    color: var(--color-2);
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+.vnl-container{
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.div-img img {
+    width: 60%;
+}
+.texto1, .texto2 {
+    width: 40%;
+    font-size: 20px;
+    color: var(--color-1);
 }
